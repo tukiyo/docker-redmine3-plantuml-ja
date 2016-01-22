@@ -1,0 +1,8 @@
+redmine3-plantuml:
+  #build: .
+  image: tukiyo3/redmine3-plantuml-ja
+  volumes:
+    - /data/redmine3/sqlite:/usr/src/redmine/sqlite
+    - /data/redmine3/files:/usr/src/redmine/files
+  ports:
+    - 3000:3000
