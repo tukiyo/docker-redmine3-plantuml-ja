@@ -9,6 +9,7 @@ It provides these features:
 
 * graphviz installed, provides `dot`, `neato`, etc.
 * plantuml, java library to render UML and sequence charts based on textual input.
+* git, mercurial, subversion, takao-fonts installed.
 
 ## Usage
 
