@@ -11,7 +11,7 @@ RUN apt-get update \
 
 RUN mkdir -p /opt/plantuml && curl -L -o /opt/plantuml/plantuml.jar http://sourceforge.net/projects/plantuml/files/plantuml.jar/download
 
-COPY plantuml /usr/bin/plantuml
+COPY bin/plantuml /usr/bin/plantuml
 RUN chmod +x /usr/bin/plantuml
 
 # ja
