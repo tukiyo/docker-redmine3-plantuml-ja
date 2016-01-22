@@ -1,4 +1,4 @@
-# Redmine 3-latest image with [graphviz][graphviz] and [plantuml][plantuml] installed [![](https://badge.imagelayers.io/marcelhuberfoo/redmine-plantuml.svg)](https://imagelayers.io/?images=marcelhuberfoo/redmine-plantuml 'Get your own badge on imagelayers.io')
+# Redmine 3-latest image with [graphviz][graphviz] and [plantuml][plantuml] installed [![](https://badge.imagelayers.io/tukiyo3/redmine3-plantuml-ja.svg)](https://imagelayers.io/?images=tukiyo3/redmine3-plantuml-ja 'Get your own badge on imagelayers.io')
 
 Docker build for an extended [redmine 3 latest docker image][redmineimage].
 
