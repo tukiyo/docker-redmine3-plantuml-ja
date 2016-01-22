@@ -11,8 +11,8 @@ RUN apt-get update \
 
 RUN mkdir -p /opt/plantuml && curl -L -o /opt/plantuml/plantuml.jar http://sourceforge.net/projects/plantuml/files/plantuml.jar/download
 
-COPY plantuml /usr/local/bin/plantuml
-RUN chmod +x /usr/local/bin/plantuml
+COPY plantuml /usr/bin/plantuml
+RUN chmod +x /usr/bin/plantuml
 
 # ja
 RUN sed -i 's/# ja_JP.UTF-8 UTF-8/ja_JP.UTF-8 UTF-8/g' /etc/locale.gen \
