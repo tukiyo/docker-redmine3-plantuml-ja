@@ -16,11 +16,10 @@ RUN chmod +x /usr/local/bin/plantuml
 
 # ja
 RUN sed -i 's/# ja_JP.UTF-8 UTF-8/ja_JP.UTF-8 UTF-8/g' /etc/locale.gen \
-    locale-gen \
-    update-locale LANG=ja_JP.UTF-8
+    && locale-gen \
+    && update-locale LANG=ja_JP.UTF-8
 ENV LANG=ja_JP.UTF-8
 
 # install redmine plugins
 RUN git clone https://github.com/ndl/wiki_external_filter.git /usr/src/redmine/plugins/wiki_external_filter \
-    cp -a /usr/src/redmine/plugins/wiki_external_filter/config/wiki_external_filter.yml /usr/src/redmine/config/
-
+    && cp -a /usr/src/redmine/plugins/wiki_external_filter/config/wiki_external_filter.yml /usr/src/redmine/config/
